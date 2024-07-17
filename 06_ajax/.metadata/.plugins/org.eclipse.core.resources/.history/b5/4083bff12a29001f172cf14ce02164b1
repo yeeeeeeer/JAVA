@@ -1,0 +1,26 @@
+package com.ohgiraffers.gson;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import com.ohgiraffers.model.dto.MemberDTO;
+
+@WebServlet("/gson/test4")
+public class GsonTestServlet4 extends HttpServlet {
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	
+		MemberDTO member = new MemberDTO("M01", "다람쥐", '남', 900, new java.sql.Date(System.currentTimeMillis()));
+	
+		response.setContentType("application/json; charset=UTF-8");
+		PrintWriter out = response.getWriter();
+		out.print("");
+		out.close();
+		
+	}
+}

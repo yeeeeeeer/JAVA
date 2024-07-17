@@ -1,0 +1,6 @@
+#jdbcDriver
+#Thu May 23 10:15:16 KST 2024
+pass=pass
+deriver=mysql.jdbc.driver.MysqlDriver
+user=user
+url=localhost

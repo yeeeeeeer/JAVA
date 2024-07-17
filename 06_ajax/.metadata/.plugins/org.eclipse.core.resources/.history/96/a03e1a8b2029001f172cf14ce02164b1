@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Gson</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<h1>AJAX 요청 후 scream을 이용한 JSON 응답 (gson library)</h1>
+
+	<h3>1. 데이터 전송 없이 json 반환</h3>
+	<button id="send-get-1">SEND</button>
+	<script>
+		$("#send-get-1").click(function(){
+			$.ajax({
+				url: "",
+				type: "",
+				success: function(data){
+					console.table(data);
+				},
+				error: function(error){
+					console.log(errer);
+				}
+			});
+		});
+	
+	</script>
+	
+	
+	
+	<h3>2. 기본 자료형 데이터 전송 후 json 반환</h3>
+	<h3>3. Object 타입의 데이터 전송 후 json 반환</h3>
+	<h3>4. json 문자열 전송 후 json 반환</h3>
+	<h3>5. GsonBuilder 테스트</h3>
+	
+</body>
+</html>

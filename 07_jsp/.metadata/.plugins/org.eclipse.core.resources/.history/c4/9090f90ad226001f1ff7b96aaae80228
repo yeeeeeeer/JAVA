@@ -1,0 +1,22 @@
+package com.ohgiraffers.jsp.menu.controller;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
+@WebServlet("/menu/order")
+public class MenuOrderServlet extends HttpServlet {
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	
+		/* 서블릿 역할 */
+		/*1. 요청 받기*/
+		/*2. 비즈니스 로직 처리하기*/
+		/*3. 응답 반환하기*/
+		
+	}
+
+}

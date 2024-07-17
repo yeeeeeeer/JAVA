@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>practice240605-handler</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <error-page>
+    <error-code>404</error-code>
+    <location>/showErrorPage</location>
+  </error-page>
+  <filter>
+    <display-name>FilterPratice</display-name>
+    <filter-name>FilterPratice</filter-name>
+    <filter-class>com.ohgiraffers.practice240605.FilterPratice</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>FilterPratice</filter-name>
+    <url-pattern>/FilterPratice</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PriceForwardServlet</display-name>
+    <servlet-name>PriceForwardServlet</servlet-name>
+    <servlet-class>com.ohgiraffers.practice240605.PriceForwardServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PriceForwardServlet</servlet-name>
+    <url-pattern>/PriceForwardServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PageReturnServlet</display-name>
+    <servlet-name>PageReturnServlet</servlet-name>
+    <servlet-class>com.ohgiraffers.practice240605.PageReturnServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PageReturnServlet</servlet-name>
+    <url-pattern>/PageReturnServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

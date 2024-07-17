@@ -1,0 +1,13 @@
+package com.ohgiraffers.model.dto;
+
+public class MemberDTO implements java.io.Serializable {
+
+	private String code;
+	private String name;
+	private char gender;
+	private int age;
+	private Date enrollDate;
+	
+	
+	
+}
